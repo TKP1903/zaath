@@ -48,7 +48,7 @@ const Carousels = () => {
         }
         </Slider>
       </div>
-      <div className="bg-pink-50 md:hidden">
+      <div className="bg-pink-50 dark:blue-color md:hidden">
         <Slider {...settings}>
         {
           heroBanners?.map((data) => (            

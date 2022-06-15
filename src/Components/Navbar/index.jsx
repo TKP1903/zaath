@@ -121,7 +121,7 @@ const SmNav = () => {
                     </div>
                 </div>
             ) : (
-                <div className="md:hidden flex items-center justify-between px-4">
+                <div className="md:hidden w-full border-2 flex items-center justify-between px-4">
                 <div className="w-24 h-12 p-2">
                     <img src="https://dnyhospitality.com/wp-content/uploads/2022/04/dny-logo.png" alt="LOGO" className="w-full h-full" />
                 </div>
@@ -144,7 +144,9 @@ const Navbar = () => {
   return (
     <div className=''>
         <LgNav />
-        <SmNav />
+        <div className="">
+            <SmNav />
+        </div>
     </div>
   )
 }

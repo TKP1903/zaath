@@ -50,7 +50,7 @@ const Clients = () => {
         </div> */}
         <div className="flex flex-wrap items-center justify-around gap-6">
           {clientLogos.map((data) => (
-            <div className="flex flex-row items-center justify-center gap-3 border-2 w-full lg:w-80 mx-4 h-36 rounded-lg px-4 shadow-sm">
+            <div className="flex flex-row items-center justify-around gap-3 border-2 w-full lg:w-80 mx-4 h-36 rounded-lg px-4 shadow-sm">
               <div className="w-36 h-38">
                 <img src={data.logo} alt="" className="w-full h-full"/>
               </div>
