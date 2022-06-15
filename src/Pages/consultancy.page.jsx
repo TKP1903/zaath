@@ -18,11 +18,11 @@ const ConsulancyPage = () => {
   return (
     <>
         <div>
-            <div style={{ background: "#020c2B"}} className="w-full md:fixed md:py-2">
+            <div className="w-full md:fixed md:py-2 bg-pink-50 dark:bg-blue-color">
                 <Navbar />
             </div>
             <ContactHero {...heroData}/>
-            <div className="py-10 px-44">
+            <div  className="py-10 lg:px-44">
                 <ServicesComponent />
             </div>
 

@@ -7,35 +7,52 @@ import ItemComponent from './item.component';
 
 const Carousels = () => {
   const [heroBanners, setHeroBanners] = useState([
-    "https://dnyhospitality.com/wp-content/uploads/2022/06/03.png",
-    "https://dnyhospitality.com/wp-content/uploads/2022/06/01.png"
+    {
+      "title": "Global Leaders In Hospitality Consulting",
+      "description": "Creating Scalable F&B Brands Globally!",
+      "image": "https://dnyhospitality.com/wp-content/uploads/2022/06/01.png"
+    },
+    {
+      "title": "End-To-End Restaurant Consulting!",
+      "description": "Start your F&B business from scratch and operate like a pro, with our professional consulting!",
+      "image": "https://dnyhospitality.com/wp-content/uploads/2022/06/02.png"
+    },
+    {
+      "title": "Globally Creating F&B Brands",
+      "description": "End-To-End Consulting for Bars, Cafes, Restaurants, QSRs and Cloud Kitchen",
+      "image": "https://dnyhospitality.com/wp-content/uploads/2022/06/03.png"
+    },
   ]);
   var settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 300,
     arrows: false,
+    cssEase: "linear",
+    autoplay: true,
+    fade: true,
+    pauseOnHover: true,
     slidesToShow: 1,
     slidesToScroll: 1
   };
   return (
     <>
-      <div style={{ height: "90%", background: "#020c2B" }} className="hidden py-20 md:block md:px-10 lg:px-44 bg-pink-50">
+      <div style={{ height: "90%" }} className="hidden bg-pink-50 dark:bg-blue-color py-20 md:block md:px-10 lg:px-44 bg-pink-50">
         <Slider {...settings}>
         {
           heroBanners?.map((data) => (
           <div className="">
-            <ItemComponent image={data}/>        
+            <ItemComponent {...data}/>        
           </div>               
           ))
         }
         </Slider>
       </div>
-      <div style={{ background: "#020c2B" }} className="bg-pink-50 md:hidden">
+      <div className="bg-pink-50 md:hidden">
         <Slider {...settings}>
         {
           heroBanners?.map((data) => (            
-            <ItemComponent image={data}/>        
+            <ItemComponent {...data}/>        
           ))
         }
         </Slider>
