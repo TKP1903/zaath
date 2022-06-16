@@ -33,7 +33,7 @@ const ItemComponent = (props) => {
           <img
             src={`${props.image}`}
             alt="Loading..."
-            className="w-full h-full p-20 lg:p-24"
+            className="w-full h-full px-12 py-24 lg:p-24"
           />
         </div>
       </div>

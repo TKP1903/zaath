@@ -17,6 +17,10 @@ const LgNav = () => {
       link: "why-us",
     },
     {
+      id: "WHO WE ARE",
+      link: "why-us",
+    },
+    {
       id: "OUR SERVICES",
       link: "our-services",
     },
@@ -39,7 +43,7 @@ const LgNav = () => {
   ];
   return (
     <>
-      <div className="hidden md:flex flex-row items-center justify-between md:mx-10 lg:mx-44">
+      <div className="hidden md:flex flex-row items-center justify-between md:mx-10 lg:mx-32">
         <div className="w-26 h-14 p-1">
           <img
             src="https://dnyhospitality.com/wp-content/uploads/2022/04/dny-logo.png"
@@ -48,7 +52,7 @@ const LgNav = () => {
           />
         </div>
         <div className="flex items-center justify-center gap-4">
-          <ul className="hidden md:flex flex-row items-center justify-center gap-3 lg:gap-5 text-xs lg:text-sm font-lato text-black dark:text-gray-50 mb-2">
+          <ul className="hidden md:flex flex-row items-center justify-center gap-3 lg:gap-3 text-xs lg:text-xs font-lato text-black dark:text-gray-50 mb-2">
             {navitems.map((data) => (
               <Link to={`/${data.link}`}>
                 <li
@@ -80,6 +84,10 @@ const SmNav = () => {
     },
     {
       id: "WHY US",
+      link: "why-us",
+    },
+    {
+      id: "WHO WE ARE",
       link: "why-us",
     },
     {
