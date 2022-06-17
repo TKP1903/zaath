@@ -20,7 +20,7 @@ const HomePage = () => {
         <div className="flex flex-col items-center justify-cecnter gap-10 pt-28 pb-10 md:pb-20 lg:px-44">
           <div className="flex flex-col items-center justify-center gap-4">
             <h1 className="text-3xl md:text-4xl font-bold border-b border-yellow-600 pb-2">
-              End-To-End Consulting
+              OUR SERVICES
             </h1>
             <p className="text-sm md:text-md text-gray-400 w-3/4 text-center">
               END-TO-END CONSULTING SERVICE FOR HOW TO START FOOD BUSINESS FROM

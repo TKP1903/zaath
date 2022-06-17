@@ -38,7 +38,10 @@ const Footer = () => {
   ];
   return (
     <>
-      <div className="bg-black dark:bg-blue-color w-full flex flex-col md:flex-row items-center justify-around gap-8 lg:gap-8 py-20 border-t border-gray-400">
+      <div
+        id="footer"
+        className="bg-black dark:bg-blue-color w-full flex flex-col md:flex-row items-center justify-around gap-8 lg:gap-8 py-20 border-t border-gray-400"
+      >
         <div className="md:w-4/12 flex flex-col items-center justify-center gap-6">
           <h4 className="text-xl font-semibold text-gray-50">Follow Us On</h4>
           <div className="flex flex-row md:flex-col lg:flex-row items-center justify-center gap-6">

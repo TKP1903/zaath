@@ -36,10 +36,10 @@ const LgNav = () => {
       id: "GALLERY",
       link: "gallery",
     },
-    {
-      id: "CONTACT US",
-      link: "contact-us",
-    },
+    // {
+    //   id: "CONTACT US",
+    //   link: "contact-us",
+    // },
   ];
   return (
     <>
@@ -52,7 +52,7 @@ const LgNav = () => {
           />
         </div>
         <div className="flex items-center justify-center gap-4">
-          <ul className="hidden md:flex flex-row items-center justify-center gap-3 lg:gap-3 text-xs lg:text-xs font-lato text-black dark:text-gray-50 mb-2">
+          <ul className="hidden md:flex flex-row items-center justify-center gap-3 lg:gap-6 text-xs lg:text-md font-lato text-black dark:text-gray-50 mb-2">
             {navitems.map((data) => (
               <Link to={`/${data.link}`}>
                 <li
@@ -67,6 +67,7 @@ const LgNav = () => {
                 </li>
               </Link>
             ))}
+            <a href="#footer">CONTACT US</a>
           </ul>
           <Toggle />
         </div>
@@ -106,10 +107,10 @@ const SmNav = () => {
       id: "GALLERY",
       link: "gallery",
     },
-    {
-      id: "CONTACT US",
-      link: "contact-us",
-    },
+    // {
+    //   id: "CONTACT US",
+    //   link: "contact-us",
+    // },
   ];
   return (
     <>
@@ -128,6 +129,7 @@ const SmNav = () => {
                   <li key={`${data.id}`}>{data.id}</li>
                 </Link>
               ))}
+              <a href="#footer">CONTACT US</a>
             </ul>
           </div>
         </div>
