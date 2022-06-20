@@ -36,24 +36,37 @@ const LgNav = () => {
       id: "GALLERY",
       link: "gallery",
     },
-    // {
-    //   id: "CONTACT US",
-    //   link: "contact-us",
-    // },
+    {
+      id: "CONTACT US",
+      link: "contact-us",
+    },
   ];
   return (
     <>
-      <div className="hidden md:flex flex-row items-center justify-between md:mx-10 lg:mx-32">
+      <div className="hidden  md:flex flex-row items-center justify-between md:mx-10 lg:mx-32 md:h-16">
         <div className="w-26 h-14 p-1">
-          <img
+          {/* <img
             src="https://dnyhospitality.com/wp-content/uploads/2022/04/dny-logo.png"
             alt="LOGO"
             className="w-full h-full"
-          />
+          /> */}
+          <h4
+            style={{
+              color: "rgb(2,0,36)",
+              background:
+                "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(48,202,197,0.22202384371717432) 7%, rgba(0,212,255,1) 100%)",
+            }}
+            className="text-3xl text-center font-bold text-gray-50"
+          >
+            Zaath
+          </h4>
+          <p className="text-bluecolor dark:text-gray-50 text-sm font-semibold px-2">
+            Food Hospitality Services
+          </p>
         </div>
-        <div className="flex items-center justify-center gap-4">
-          <ul className="hidden md:flex flex-row items-center justify-center gap-3 lg:gap-6 text-xs lg:text-md font-lato text-black dark:text-gray-50 mb-2">
-            {navitems.map((data) => (
+        <div className="">
+          <ul className="hidden md:flex flex-row items-center justify-center gap-3 lg:gap-6 text-md lg:text-md font-lato text-black dark:text-gray-50 mb-2">
+            {/* {navitems.map((data) => (
               <Link to={`/${data.link}`}>
                 <li
                   key={`123${data.id}`}
@@ -66,10 +79,13 @@ const LgNav = () => {
                   {data.id}
                 </li>
               </Link>
-            ))}
+            ))} */}
+            <a href="#home">HOME</a>
+            <a href="#our-services">OUR SERVICES</a>
+            <a href="#our-clientele">OUR CLIENTELE</a>
             <a href="#footer">CONTACT US</a>
+            <Toggle />
           </ul>
-          <Toggle />
         </div>
       </div>
     </>
@@ -124,11 +140,14 @@ const SmNav = () => {
           </button>
           <div className="w-full h-full flex flex-col items-center justify-center">
             <ul className="flex flex-col items-center justify-center gap-6 text-white font-bold text-lg">
-              {navitems.map((data) => (
+              {/* {navitems.map((data) => (
                 <Link to={`/${data.link}`}>
                   <li key={`${data.id}`}>{data.id}</li>
                 </Link>
-              ))}
+              ))} */}
+              <a href="#home">HOME</a>
+              <a href="#our-services">OUR SERVICES</a>
+              <a href="#our-clientele">OUR CLIENTELE</a>
               <a href="#footer">CONTACT US</a>
             </ul>
           </div>
@@ -158,8 +177,10 @@ const SmNav = () => {
 };
 const Navbar = () => {
   return (
-    <div className="">
-      <LgNav />
+    <div>
+      <div className="bg-pink-50 dark:bg-blue-color w-full md:fixed md:py-2 z-50">
+        <LgNav />
+      </div>
       <div className="">
         <SmNav />
       </div>

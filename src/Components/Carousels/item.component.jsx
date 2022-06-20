@@ -5,7 +5,7 @@ const ItemComponent = (props) => {
     <>
       <div
         style={{ height: "600px" }}
-        className="hidden md:flex items-center justify-center w-full text-blue-color dark:text-gray-50"
+        className="hidden z-10 md:flex items-center justify-center w-full text-blue-color dark:text-gray-50"
       >
         <div className="w-1/2 flex flex-col items-start justify-center gap-6">
           <h1 className="text-5xl lg:text-6xl font-bold">{props.title}</h1>

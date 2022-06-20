@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useParams } from "react-router-dom";
 
 //Components
 import Navbar from "../Components/Navbar";
@@ -7,17 +8,28 @@ import VideoComponent from "../Components/Carousels/video.Component";
 import ServicesComponent from "../Components/services/services.component";
 import Clients from "../Components/clientsLogos/clients";
 import Footer from "../Components/footer";
+import ContactForm from "../Components/contactForm";
 
 const HomePage = () => {
+  const { type } = useParams();
+
+  useEffect(() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, [type]);
   return (
     <>
-      <div>
-        <div className="bg-pink-50 dark:bg-blue-color w-full md:fixed md:py-2">
-          <Navbar />
-        </div>
+      <div id="home">
+        <Navbar />
         <Carousels />
         <VideoComponent />
-        <div className="flex flex-col items-center justify-cecnter gap-10 pt-28 pb-10 md:pb-20 lg:px-44">
+        <div
+          id="our-services"
+          className="flex flex-col items-center justify-cecnter gap-10 pt-28 pb-10 md:pb-20 lg:px-44"
+        >
           <div className="flex flex-col items-center justify-center gap-4">
             <h1 className="text-3xl md:text-4xl font-bold border-b border-yellow-600 pb-2">
               OUR SERVICES
@@ -29,7 +41,10 @@ const HomePage = () => {
           </div>
           <ServicesComponent />
         </div>
-        <div className="flex flex-col items-center justify-cecnter gap-10 pt-28 md:px-20 lg:px-44 dark:bg-blue-color py-4 md:py-10">
+        <div
+          id="our-clientele"
+          className="flex flex-col items-center justify-cecnter gap-10 pt-28 md:px-20 lg:px-44 dark:bg-blue-color py-4 md:py-10"
+        >
           <div className="flex flex-col items-center justify-center gap-4 dark:text-gray-50">
             <h1 className="text-4xl font-bold border-b border-yellow-600 pb-2">
               Our Clientele
@@ -40,6 +55,7 @@ const HomePage = () => {
           </div>
           <Clients />
         </div>
+        <ContactForm />
         <Footer />
       </div>
     </>

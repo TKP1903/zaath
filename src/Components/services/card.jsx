@@ -5,7 +5,7 @@ const Card = (props) => {
   return (
     <>
       <Link to={`/consulting/${props.name}`}>
-        <div className="flex flex-col items-center justify-center gap-6 shadow-xl rounded-3xl md:hover:animate-ping hover:ease-in-out hover:delay-150">
+        <div className="flex flex-col items-center justify-center gap-6 shadow-xl rounded-3xl hover:ease-in-out hover:delay-150">
           <div className="w-full h-full">
             <img
               src={props.image}

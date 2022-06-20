@@ -1,13 +1,11 @@
 import React from "react";
-import ContactForm from "../Components/contactForm";
-import ContactHero from "../Components/Hero/contact.component";
 
-import { IoLocationSharp } from "react-icons/io5";
-import { MdEmail, MdCall } from "react-icons/md";
 //Components
 import Navbar from "../Components/Navbar";
 import ServicesComponent from "../Components/services/services.component";
+import ContactHero from "../Components/Hero/contact.component";
 import Footer from "../Components/footer";
+import ContactForm from "../Components/contactForm";
 
 const ConsulancyPage = () => {
   const heroData = {
@@ -21,17 +19,13 @@ const ConsulancyPage = () => {
   return (
     <>
       <div>
-        <div className="w-full md:fixed md:py-2 bg-pink-50 dark:bg-blue-color">
-          <Navbar />
-        </div>
-        <h1 className="text-4xl font-bold text-blue-color text-center lg:p-80">
-          OUR SERVICES Page
-        </h1>
-        {/* <ContactHero {...heroData} />
+        <Navbar />
+        <ContactHero {...heroData} />
         <div className="py-10 lg:px-44">
           <ServicesComponent />
         </div>
-        <Footer /> */}
+        <ContactForm />
+        <Footer />
       </div>
     </>
   );
