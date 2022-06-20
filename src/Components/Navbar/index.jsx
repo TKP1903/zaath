@@ -129,31 +129,61 @@ const SmNav = () => {
   ];
   return (
     <>
-      {isDropDownOpen ? (
-        <div className="md:hidden w-full h-screen flex flex-col items-end bg-black">
-          <button
-            className="w-9 h-9 mr-5 mt-4"
-            onClick={() => setIsDropDownOpen((prev) => !prev)}
-          >
-            <MdClose className="w-full h-full text-gray-50 ease-in duration-300" />
-          </button>
-          <div className="w-full h-full flex flex-col items-center justify-center">
-            <ul className="flex flex-col items-center justify-center gap-6 text-white font-bold text-lg">
-              {/* {navitems.map((data) => (
-                <Link to={`/${data.link}`}>
-                  <li key={`${data.id}`}>{data.id}</li>
-                </Link>
-              ))} */}
-              {/* <a href="#home">HOME</a>
-              <a href="#our-services">OUR SERVICES</a>
-              <a href="#our-clientele">OUR CLIENTELE</a>
-              <a href="#footer">CONTACT US</a> */}
-            </ul>
-          </div>
+      {/* {isDropDownOpen ? (
+        // <div className="md:hidden w-full h-screen flex flex-col items-end bg-black">
+        //   <button
+        //     className="w-9 h-9 mr-5 mt-4"
+        //     onClick={() => setIsDropDownOpen((prev) => !prev)}
+        //   >
+        //     <MdClose className="w-full h-full text-gray-50 ease-in duration-300" />
+        //   </button>
+        //   <div className="w-full h-full flex flex-col items-center justify-center">
+        //     <ul className="flex flex-col items-center justify-center gap-6 text-white font-bold text-lg">
+        //       {navitems.map((data) => (
+        //         <Link to={`/${data.link}`}>
+        //           <li key={`${data.id}`}>{data.id}</li>
+        //         </Link>
+        //       ))}
+        //       </ul>
+        //     </div>
+
+        // </div>
+        <div className="flex flex-col items-start gap-6 mt-14">
+          <a href="#home">HOME</a>
+          <a href="#our-services">OUR SERVICES</a>
+          <a href="#our-clientele">OUR CLIENTELE</a>
+          <a href="#footer">CONTACT US</a>
         </div>
       ) : (
         <div className="md:hidden w-full flex items-center justify-between px-4">
-          <div className="h-12 p-2">
+          <div className="p-2">
+            {/* <img
+              src="https://dnyhospitality.com/wp-content/uploads/2022/04/dny-logo.png"
+              alt="LOGO"
+              className="w-full h-full"
+            /> */}
+      {/* <h4 className="text-3xl text-start md:text-center font-bold text-blue-900 dark:text-gray-50">
+              Zaath
+            </h4>
+            <p className="text-bluecolor dark:text-gray-50 text-sm font-semibold md:px-2">
+              Food Hospitality Services
+            </p>
+          </div>
+          <div className="flex items-center justify-center gap-2">
+            <Toggle />
+            <button
+              className="w-7 h-7 text-gray-900 dark:text-gray-50"
+              onClick={() => setIsDropDownOpen((prev) => !prev)}
+            >
+              <GiHamburgerMenu className="w-full h-full ease-in duration-300" />
+            </button>
+          </div>
+
+        </div> */}
+      {/* )}  */}
+      <div className="block md:hidden">
+        <div className="bg-pink-50 dark:bg-blue-color w-full md:hidden w-full flex items-center justify-between px-4">
+          <div className="p-2">
             {/* <img
               src="https://dnyhospitality.com/wp-content/uploads/2022/04/dny-logo.png"
               alt="LOGO"
@@ -176,7 +206,17 @@ const SmNav = () => {
             </button>
           </div>
         </div>
-      )}
+        {isDropDownOpen && (
+          <div className="flex items-end justify-end w-full">
+            <div className="w-44 py-4 flex flex-col items-start px-2 justify-end gap-3  dark:bg-pink-50 dark:text-blue-color text-gray-50 bg-blue-color font-light text-md">
+              <a href="#home">HOME</a>
+              <a href="#our-services">OUR SERVICES</a>
+              <a href="#our-clientele">OUR CLIENTELE</a>
+              <a href="#footer">CONTACT US</a>
+            </div>
+          </div>
+        )}
+      </div>
     </>
   );
 };
@@ -185,9 +225,10 @@ const Navbar = () => {
     <div>
       <div className="fixed bg-pink-50 dark:bg-blue-color w-full md:fixed md:py-2 z-50">
         <LgNav />
+      </div>
+      <div className="fixed w-full z-50">
         <SmNav />
       </div>
-      <div className=""></div>
     </div>
   );
 };
