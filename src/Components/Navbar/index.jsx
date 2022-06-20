@@ -6,7 +6,6 @@ import Toggle from "../../Themes/ThemeToggle";
 
 const LgNav = () => {
   const { type } = useParams();
-  console.log(type);
   const navitems = [
     {
       id: "HOME",
@@ -145,21 +144,27 @@ const SmNav = () => {
                   <li key={`${data.id}`}>{data.id}</li>
                 </Link>
               ))} */}
-              <a href="#home">HOME</a>
+              {/* <a href="#home">HOME</a>
               <a href="#our-services">OUR SERVICES</a>
               <a href="#our-clientele">OUR CLIENTELE</a>
-              <a href="#footer">CONTACT US</a>
+              <a href="#footer">CONTACT US</a> */}
             </ul>
           </div>
         </div>
       ) : (
         <div className="md:hidden w-full flex items-center justify-between px-4">
-          <div className="w-24 h-12 p-2">
-            <img
+          <div className="h-12 p-2">
+            {/* <img
               src="https://dnyhospitality.com/wp-content/uploads/2022/04/dny-logo.png"
               alt="LOGO"
               className="w-full h-full"
-            />
+            /> */}
+            <h4 className="text-3xl text-start md:text-center font-bold text-blue-900 dark:text-gray-50">
+              Zaath
+            </h4>
+            <p className="text-bluecolor dark:text-gray-50 text-sm font-semibold md:px-2">
+              Food Hospitality Services
+            </p>
           </div>
           <div className="flex items-center justify-center gap-2">
             <Toggle />
@@ -178,12 +183,11 @@ const SmNav = () => {
 const Navbar = () => {
   return (
     <div>
-      <div className="bg-pink-50 dark:bg-blue-color w-full md:fixed md:py-2 z-50">
+      <div className="fixed bg-pink-50 dark:bg-blue-color w-full md:fixed md:py-2 z-50">
         <LgNav />
-      </div>
-      <div className="">
         <SmNav />
       </div>
+      <div className=""></div>
     </div>
   );
 };

@@ -50,7 +50,7 @@ const Carousels = () => {
           ))}
         </Slider>
       </div>
-      <div className="bg-pink-50 dark:bg-blue-color md:hidden">
+      <div className="bg-pink-50 dark:bg-blue-color md:hidden pt-10">
         <Slider {...settings}>
           {heroBanners?.map((data) => (
             <ItemComponent {...data} />
