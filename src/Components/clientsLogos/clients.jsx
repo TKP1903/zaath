@@ -1,46 +1,33 @@
 import React from "react";
 
+//client logos
+import sb from "../../assets/sb.jpeg";
+import aa from "../../assets/aa.jpeg";
+import cfc from "../../assets/cfc.jpeg";
+import egfc from "../../assets/egfe.jpeg";
+import foodo from "../../assets/foodo.jpeg";
+
 const Clients = () => {
   const clientLogos = [
     {
-      name: "MINT LEAVES",
-      logo: "https://img.freepik.com/free-vector/fresh-green-mint-leaves-logo-design_337180-606.jpg",
+      name: "SB",
+      logo: sb,
     },
     {
-      name: "HOMEMADE FOOD",
-      logo: "https://dcassetcdn.com/design_img/1871193/537357/537357_10136505_1871193_f3cdfd67_image.jpg",
+      name: "ATTI SQUARE",
+      logo: aa,
     },
     {
-      name: "KITCHEN",
-      logo: "https://i.pinimg.com/736x/76/1d/b8/761db822cc6efc3c2883cd2e1434afba.jpg",
+      name: "CRAVE FOOD COMPANY",
+      logo: cfc,
     },
     {
-      name: "HOME COOKED",
-      logo: "https://www.paolivillageshoppes.com/wp-content/uploads/homecooked-placement-logo.jpg",
+      name: "EVER GREEN FOOD EXPRESS",
+      logo: egfc,
     },
     {
-      name: "Thick Shake Factory",
-      logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcHHGXZ3F0KX33d_cs7IrOjGQ5yaibw35P1Z3J3jh11g&s",
-    },
-    {
-      name: "MINT LEAVES",
-      logo: "https://img.freepik.com/free-vector/fresh-green-mint-leaves-logo-design_337180-606.jpg",
-    },
-    {
-      name: "HOMEMADE FOOD",
-      logo: "https://dcassetcdn.com/design_img/1871193/537357/537357_10136505_1871193_f3cdfd67_image.jpg",
-    },
-    {
-      name: "KITCHEN",
-      logo: "https://i.pinimg.com/736x/76/1d/b8/761db822cc6efc3c2883cd2e1434afba.jpg",
-    },
-    {
-      name: "HOME COOKED",
-      logo: "https://www.paolivillageshoppes.com/wp-content/uploads/homecooked-placement-logo.jpg",
-    },
-    {
-      name: "Thick Shake Factory",
-      logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcHHGXZ3F0KX33d_cs7IrOjGQ5yaibw35P1Z3J3jh11g&s",
+      name: "FOODO",
+      logo: foodo,
     },
   ];
   return (

@@ -65,7 +65,7 @@ const LgNav = () => {
         </div>
         <div className="">
           <ul className="hidden md:flex flex-row items-center justify-center gap-3 lg:gap-6 text-md lg:text-md font-lato text-black dark:text-gray-50 mb-2">
-            {/* {navitems.map((data) => (
+            {navitems.map((data) => (
               <Link to={`/${data.link}`}>
                 <li
                   key={`123${data.id}`}
@@ -78,11 +78,11 @@ const LgNav = () => {
                   {data.id}
                 </li>
               </Link>
-            ))} */}
-            <a href="#home">HOME</a>
+            ))}
+            {/* <a href="#home">HOME</a>
             <a href="#our-services">OUR SERVICES</a>
             <a href="#our-clientele">OUR CLIENTELE</a>
-            <a href="#footer">CONTACT US</a>
+            <a href="#footer">CONTACT US</a> */}
             <Toggle />
           </ul>
         </div>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const ProjectCard = (props) => {
   return (
     <>
-      <Link to={`/${props.name}`}>
+      <Link to={`/projects/${props.name}`}>
         <div className="w-72 h-72 relative">
           <img
             src={`${props.image}`}

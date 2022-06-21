@@ -8,6 +8,7 @@ import Footer from "../Components/footer";
 import Navbar from "../Components/Navbar";
 import ProjectCard from "../Components/Projects/projectCard.component";
 import ProjectHero from "../Components/Projects/projectHero";
+import ProjectsDetails from "../Components/Projects/ProjectsDetails.component";
 
 const ProjectsPage = () => {
   const { type } = useParams();
@@ -18,9 +19,9 @@ const ProjectsPage = () => {
         "https://dnyhospitality.com/wp-content/uploads/2022/03/New-size-288-26.jpg",
     },
     {
-      name: "The Thick Shake Factory",
+      name: "Falafels",
       image:
-        "https://dnyhospitality.com/wp-content/uploads/2022/03/New-size-288-26.jpg",
+        "https://dnyhospitality.com/wp-content/uploads/2022/03/New-size-288-04-1.jpg",
     },
     {
       name: "The Thick Shake Factory",
@@ -65,18 +66,24 @@ const ProjectsPage = () => {
     <>
       <div className="bg-pink-50 dark:bg-blue-color bg-pink-50 dark:bg-blue-color">
         <Navbar />
-        <ProjectHero
-          title="Our Projects"
-          header="Ideas Are Concepts Until Executed."
-          description="Brands as creative structures from human minds."
-        />
-        <div className="md:block md:px-10 pb-20">
-          <div className="flex flex-wrap items-center justify-center gap-10 ">
-            {projects.map((data) => (
-              <ProjectCard {...data} />
-            ))}
+        {type === "projects" ? (
+          <div>
+            <ProjectHero
+              title="Our Projects"
+              header="Ideas Are Concepts Until Executed."
+              description="Brands as creative structures from human minds."
+            />
+            <div className="md:block md:px-10 pb-20">
+              <div className="flex flex-wrap items-center justify-center gap-10 ">
+                {projects.map((data) => (
+                  <ProjectCard {...data} />
+                ))}
+              </div>
+            </div>
           </div>
-        </div>
+        ) : (
+          <ProjectsDetails />
+        )}
         <ContactForm />
         <Footer />
       </div>

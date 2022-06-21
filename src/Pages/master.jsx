@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import AboutPage from "./about.page";
 import ConsulancyPage from "./consultancy.page";
@@ -10,7 +10,13 @@ import ProjectsPage from "./projects.page";
 
 const Master = () => {
   const { type } = useParams();
-
+  useEffect(() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, [type]);
   return (
     <>
       {type === "home" && <HomePage />}

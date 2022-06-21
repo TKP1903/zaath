@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { useParams } from "react-router-dom";
+import React from "react";
 
 //Components
 import Navbar from "../Components/Navbar";
@@ -11,15 +10,6 @@ import Footer from "../Components/footer";
 import ContactForm from "../Components/contactForm";
 
 const HomePage = () => {
-  const { type } = useParams();
-
-  useEffect(() => {
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-  }, [type]);
   return (
     <>
       <div id="home">

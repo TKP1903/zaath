@@ -1,17 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Navbar from "../Components/Navbar";
-import { useParams } from "react-router-dom";
 
 const AboutPage = () => {
-  const { type } = useParams();
-
-  useEffect(() => {
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-  }, [type]);
   return (
     <>
       <div>
