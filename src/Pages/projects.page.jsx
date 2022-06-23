@@ -9,6 +9,7 @@ import Navbar from "../Components/Navbar";
 import ProjectCard from "../Components/Projects/projectCard.component";
 import ProjectHero from "../Components/Projects/projectHero";
 import ProjectsDetails from "../Components/Projects/ProjectsDetails.component";
+import projects from "../Components/Projects/data.json";
 
 const ProjectsPage = () => {
   const { type } = useParams();
@@ -64,7 +65,7 @@ const ProjectsPage = () => {
   }, [type]);
   return (
     <>
-      <div className="bg-pink-50 dark:bg-blue-color bg-pink-50 dark:bg-blue-color">
+      <div className="bg-pink-50 dark:bg-blue-color">
         <Navbar />
         {type === "projects" ? (
           <div>

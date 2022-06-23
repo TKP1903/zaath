@@ -27,10 +27,10 @@ const LgNav = () => {
       id: "PROJECTS",
       link: "projects",
     },
-    {
-      id: "INNOVATIONS",
-      link: "innovations",
-    },
+    // {
+    //   id: "INNOVATIONS",
+    //   link: "innovations",
+    // },
     {
       id: "GALLERY",
       link: "gallery",
@@ -42,7 +42,7 @@ const LgNav = () => {
   ];
   return (
     <>
-      <div className="hidden  md:flex flex-row items-center justify-between md:mx-10 lg:mx-32 md:h-16">
+      <div className="hidden  lg:flex flex-row items-center justify-between md:mx-10 lg:mx-32 md:h-16">
         <div className="w-26 h-14 p-1">
           {/* <img
             src="https://dnyhospitality.com/wp-content/uploads/2022/04/dny-logo.png"
@@ -64,8 +64,8 @@ const LgNav = () => {
           </p>
         </div>
         <div className="">
-          <ul className="hidden md:flex flex-row items-center justify-center gap-3 lg:gap-6 text-md lg:text-md font-lato text-black dark:text-gray-50 mb-2">
-            {/* {navitems.map((data) => (
+          <ul className="hidden md:flex flex-row items-center justify-center gap-3 lg:gap-4 text-md lg:text-sm font-semibold text-black dark:text-gray-50 mb-2">
+            {navitems.map((data) => (
               <Link to={`/${data.link}`}>
                 <li
                   key={`123${data.id}`}
@@ -78,11 +78,11 @@ const LgNav = () => {
                   {data.id}
                 </li>
               </Link>
-            ))} */}
-            <a href="#home">HOME</a>
+            ))}
+            {/* <a href="#home">HOME</a>
             <a href="#our-services">OUR SERVICES</a>
             <a href="#our-clientele">OUR CLIENTELE</a>
-            <a href="#footer">CONTACT US</a>
+            <a href="#footer">CONTACT US</a> */}
             <Toggle />
           </ul>
         </div>
@@ -93,6 +93,7 @@ const LgNav = () => {
 
 const SmNav = () => {
   const [isDropDownOpen, setIsDropDownOpen] = useState(false);
+  const { type } = useParams();
   const navitems = [
     {
       id: "HOME",
@@ -181,8 +182,8 @@ const SmNav = () => {
 
         </div> */}
       {/* )}  */}
-      <div className="block md:hidden">
-        <div className="bg-pink-50 dark:bg-blue-color w-full md:hidden w-full flex items-center justify-between px-4">
+      <div className="block lg:hidden">
+        <div className="bg-pink-50 dark:bg-blue-color w-full lg:hidden w-full flex items-center justify-between px-4">
           <div className="p-2">
             {/* <img
               src="https://dnyhospitality.com/wp-content/uploads/2022/04/dny-logo.png"
@@ -209,10 +210,24 @@ const SmNav = () => {
         {isDropDownOpen && (
           <div className="flex items-end justify-end w-full">
             <div className="w-44 py-4 flex flex-col items-start px-2 justify-end gap-3  dark:bg-pink-50 dark:text-blue-color text-gray-50 bg-blue-color font-light text-md">
-              <a href="#home">HOME</a>
+              {/* <a href="#home">HOME</a>
               <a href="#our-services">OUR SERVICES</a>
               <a href="#our-clientele">OUR CLIENTELE</a>
-              <a href="#footer">CONTACT US</a>
+              <a href="#footer">CONTACT US</a> */}
+              {navitems.map((data) => (
+                <Link to={`/${data.link}`}>
+                  <li
+                    key={`123${data.id}`}
+                    className={
+                      data.link === type
+                        ? "text-yellow-500 border-b-2 border-yellow-500 pb-1 transition ease-in-out delay-150"
+                        : ""
+                    }
+                  >
+                    {data.id}
+                  </li>
+                </Link>
+              ))}
             </div>
           </div>
         )}
@@ -223,7 +238,7 @@ const SmNav = () => {
 const Navbar = () => {
   return (
     <div>
-      <div className="fixed bg-pink-50 dark:bg-blue-color w-full md:fixed md:py-2 z-50">
+      <div className="fixed bg-pink-50 dark:bg-blue-color w-full lg:fixed md:py-2 z-50">
         <LgNav />
       </div>
       <div className="fixed w-full z-50">

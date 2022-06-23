@@ -8,8 +8,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import HomePage from "./Pages/home.page";
 import Master from "./Pages/master";
-import ConsultingService from "./Pages/consultingService";
 import ProjectsPage from "./Pages/projects.page";
+import ConsulancyPage from "./Pages/consultancy.page";
 
 const App = () => {
   return (
@@ -17,7 +17,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/:type" element={<Master />} />
-        <Route path="/consulting/:id" element={<ConsultingService />} />
+        <Route path="/consulting/:type" element={<ConsulancyPage />} />
         <Route path="/projects/:type" element={<ProjectsPage />} />
       </Routes>
     </>

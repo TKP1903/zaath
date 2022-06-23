@@ -3,8 +3,8 @@ import React from "react";
 export const ContactForm = () => {
   return (
     <>
-      <div className="md:px-44 flex items-center justify-center bg-red-50 dark:bg-blue-color py-20 border-t border-gray-100">
-        <div className="bg-red-50 dark:bg-blue-color flex flex-col items-center justify-center gap-6 md:w-1/2 p-4 lg:py-10 rounded-2xl">
+      <div className="md:px-10 lg:px-44 flex items-center justify-center bg-red-50 dark:bg-blue-color py-20 border-t border-gray-100">
+        <div className="bg-red-50 dark:bg-blue-color flex flex-col items-center justify-center gap-6 w-full lg:w-1/2 p-4 lg:py-10 rounded-2xl">
           <div className="flex flex-col items-start justify-center gap-4 w-full">
             <h1 className="text-2xl md:text-4xl font-bold border-b border-yellow-600 text-blue-color dark:text-gray-50 pb-2">
               CONTACT US

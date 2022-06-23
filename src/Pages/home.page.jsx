@@ -18,10 +18,10 @@ const HomePage = () => {
         <VideoComponent />
         <div
           id="our-services"
-          className="flex flex-col items-center justify-cecnter gap-10 pt-28 pb-10 md:pb-20 lg:px-44"
+          className="flex flex-col items-center justify-cecnter gap-10 pt-28 pb-10 md:pb-20 lg:px-20 bg-red-50 dark:bg-blue-color"
         >
           <div className="flex flex-col items-center justify-center gap-4">
-            <h1 className="text-3xl md:text-4xl font-bold border-b border-yellow-600 pb-2">
+            <h1 className="text-3xl md:text-4xl font-bold border-b border-yellow-600 pb-2 dark:text-gray-50">
               OUR SERVICES
             </h1>
             <p className="text-sm md:text-md text-gray-400 w-3/4 text-center">

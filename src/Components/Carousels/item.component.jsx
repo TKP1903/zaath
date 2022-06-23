@@ -5,19 +5,19 @@ const ItemComponent = (props) => {
     <>
       <div
         style={{ height: "600px" }}
-        className="hidden z-10 md:flex items-center justify-center w-full text-blue-color dark:text-gray-50"
+        className="hidden z-10 md:flex items-center justify-center gap-10 w-full text-blue-color dark:text-gray-50"
       >
-        <div className="w-1/2 flex flex-col items-start justify-center gap-6">
+        <div className="w-1/2 flex flex-col items-start justify-center gap-6 p-3 border border-gray-50 dark:border-light-blue shadow-xl">
           <h1 className="text-5xl lg:text-6xl font-bold">{props.title}</h1>
           <p className="text-md lg:text-lg text-gray-500 w-5/6">
             {props.desctiption}
           </p>
         </div>
-        <div className="h-full">
+        <div className="">
           <img
             src={`${props.image}`}
             alt="Loading..."
-            className="w-full h-full p-20 lg:p-24 z-0"
+            className="w-full h-full z-0 rounded-xl shadow-xl border border-gray-50 dark:border-light-blue"
           />
         </div>
       </div>
