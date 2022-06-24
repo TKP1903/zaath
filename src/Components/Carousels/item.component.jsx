@@ -22,9 +22,9 @@ const ItemComponent = (props) => {
         </div>
       </div>
 
-      <div className="z-10 flex flex-col md:hidden items-center justify-center relative pt-10 dark:text-gray-50 h-screen pb-10">
-        <div className="flex flex-col items-start justify-center gap-6 w-4/5 pt-10">
-          <h1 className="text-4xl text-center font-bold">{props.title}</h1>
+      <div className="z-10 flex flex-col md:hidden items-center justify-center relative pt-16 dark:text-gray-50 h-screen">
+        <div className="flex flex-col items-start justify-center w-4/5 pt-10">
+          <h1 className="text-3xl text-center font-bold">{props.title}</h1>
           <p className="text-md text-gray-500 text-center">
             {props.desctiption}
           </p>

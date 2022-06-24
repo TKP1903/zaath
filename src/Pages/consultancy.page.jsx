@@ -28,7 +28,7 @@ const ConsulancyPage = () => {
   };
   return (
     <>
-      <div className="bg-pink-50 dark:bg-blue-color ">
+      <div className="bg-pink-50 dark:bg-blue-color">
         <Navbar />
         {type === "our-services" ? (
           <div>

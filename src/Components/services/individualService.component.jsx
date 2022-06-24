@@ -18,7 +18,7 @@ const IndividualService = () => {
   });
   return (
     <>
-      <div>
+      <div className="pt-16">
         <ContactHero
           title="Our Services"
           header={data?.name}
@@ -41,7 +41,7 @@ const IndividualService = () => {
           </div>
         </div>
         <div className="py-36">
-          <h1 className="text-5xl font-bold text-blue-color dark:text-gray-50 text-center pb-20">
+          <h1 className="text-3xl md:text-5xl font-bold text-blue-color dark:text-gray-50 text-center pb-20">
             You Must Know
           </h1>
           <ServicesDescription data={data.you_must_know} />

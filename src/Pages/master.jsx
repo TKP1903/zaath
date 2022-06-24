@@ -23,8 +23,9 @@ const Master = () => {
       {type === "why-us" && <AboutPage />}
       {type === "our-services" && <ConsulancyPage />}
       {type === "projects" && <ProjectsPage />}
-      {type === "innovations" && <InnovationPage />}
-      {type === "gallery" && <GalleryPage />}
+      {(type === "gallery" ||
+        type === "photo-gallery" ||
+        type === "video-gallery") && <GalleryPage />}
       {type === "contact-us" && <ContactPage />}
     </>
   );
