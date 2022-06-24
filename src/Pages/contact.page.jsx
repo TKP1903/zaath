@@ -1,9 +1,7 @@
-import React, { useEffect } from "react";
-import { useParams } from "react-router-dom";
+import React from "react";
 
 import { IoLocationSharp } from "react-icons/io5";
 import { MdEmail, MdCall } from "react-icons/md";
-
 
 //Components
 import Navbar from "../Components/Navbar";
@@ -13,14 +11,6 @@ import MapView from "../Components/mapView";
 import Footer from "../Components/footer";
 
 const ContactPage = () => {
-  const { type } = useParams();
-  useEffect(() => {
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-  }, [type]);
   const heroData = {
     title: "Contact Us",
     header: "Reach Out To Us With Your Business Idea!",
@@ -36,7 +26,7 @@ const ContactPage = () => {
         <ContactHero {...heroData} />
         <div className="bg-slate-50 dark:bg-light-blue w-full flex flex-col md:flex-row items-center md:items-start justify-center gap-10 md:gap-0 px-3 lg:px-44 py-10 lg:py-44">
           <CForm />
-          <div className="flex flex-col items-center justify-center gap-2 lg:gap-5 md:w-1/2 md:px-10 lg:px-20">
+          <div className="flex flex-col items-center justify-center gap-2 lg:gap-5 md:w-1/2 md:px-10 lg:px-10">
             <div className="bg-red-50 dark:bg-blue-color flex flex-col items-start justify-center gap-2 md:gap-4 w-full p-4 rounded-2xl">
               <h1 className="text-3xl md:text-4xl font-bold border-b border-yellow-600 text-blue-color dark:text-gray-50 pb-2">
                 INFO

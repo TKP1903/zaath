@@ -10,6 +10,7 @@ import HomePage from "./Pages/home.page";
 import Master from "./Pages/master";
 import ProjectsPage from "./Pages/projects.page";
 import ConsulancyPage from "./Pages/consultancy.page";
+import GalleryPage from "./Pages/gallery.page";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/:type" element={<Master />} />
         <Route path="/consulting/:type" element={<ConsulancyPage />} />
         <Route path="/projects/:type" element={<ProjectsPage />} />
+        <Route path="/gallery/:type" element={<GalleryPage />} />
       </Routes>
     </>
   );

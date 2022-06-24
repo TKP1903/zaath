@@ -1,0 +1,24 @@
+[
+    {
+        "name": "DNY HOSPITALITY SHOWREEL",
+        "link": "dny-hospitality-showreel",
+        "cover_image": "https://dnyhospitality.com/wp-content/uploads/2022/02/Untitled-design-5.png",
+        "header": "DNY Hospitality Showreel",
+        "title": "Videos",
+        "all_links": [
+            "https://youtu.be/KAgtoy6By8g",
+            "https://youtu.be/syF_bd3WVWY"
+        ]
+    },    
+    {
+        "name": "THICK SHAKE FACTORY",
+        "link": "thick-shake-factory",
+        "cover_image": "https://dnyhospitality.com/wp-content/uploads/2022/03/Untitled-design-10-1.png",
+        "header": "Thick Shake Factory",
+        "title": "Videos",
+        "all_links": [
+            "https://youtu.be/XGKqbjkakAQ",
+            "https://youtu.be/Nlaje9ay3ak"
+        ]
+    }
+]

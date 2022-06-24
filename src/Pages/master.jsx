@@ -10,6 +10,7 @@ import ProjectsPage from "./projects.page";
 
 const Master = () => {
   const { type } = useParams();
+  console.log(type);
   useEffect(() => {
     window.scroll({
       top: 0,

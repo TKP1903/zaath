@@ -4,20 +4,22 @@ import { Link } from "react-router-dom";
 const GalleryVideoComponent = (props) => {
   return (
     <>
-      <Link to={`/${props}`}>
-        <div className="flex flex-col items-center justify-center gap-2 w-1/4 border border-gray-200 p-1 rounded-lg">
-          <div>
-            <img
-              src="https://dnyhospitality.com/wp-content/uploads/2022/02/branding-Gallery-05.jpg"
-              alt=""
-              className="rounded-t-lg"
-            />
+      <div className="w-64 lg:w-3/12 object-cover transform transition duration-700 hover:scale-110">
+        <Link to={`/gallery/${props.name}?name=video&value=${props.link}`}>
+          <div className="flex flex-col items-center justify-center gap-2 border border-gray-200 dark:border-light-blue shadow-xl p-1 rounded-lg">
+            <div className="w-full h-full">
+              <img
+                src={props.cover_image}
+                alt=""
+                className="rounded-t-lg w-full h-full"
+              />
+            </div>
+            <h5 className="text-md  truncate w-full text-center font-semibold text-gray-400 py-2">
+              {props.name}
+            </h5>
           </div>
-          <h5 className="text-lg font-semibold text-gray-400 py-2">
-            BRANDING AND DESIGNING
-          </h5>
-        </div>
-      </Link>
+        </Link>
+      </div>
     </>
   );
 };
