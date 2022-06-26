@@ -1,6 +1,20 @@
 import React from "react";
+//import apiKey from "../../email_key";
 
 export const ContactForm = () => {
+  // const handleSubmit = (e) => {
+  //   e.preventDefault(); // Prevents default refresh by the browser
+  //   emailjs
+  //     .sendForm(`gmail`, apiKey.TEMPLATE_ID, e.target, apiKey.USER_ID)
+  //     .then(
+  //       (result) => {
+  //         alert("Message Sent, We will get back to you shortly", result.text);
+  //       },
+  //       (error) => {
+  //         alert("An error occurred, Please try again", error.text);
+  //       }
+  //     );
+  // };
   return (
     <>
       <div className="md:px-10 lg:px-44 flex items-center justify-center bg-red-50 dark:bg-blue-color py-20 border-t border-gray-100">

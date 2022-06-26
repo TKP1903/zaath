@@ -17,7 +17,7 @@ const LgNav = () => {
     },
     {
       id: "WHO WE ARE",
-      link: "why-us",
+      link: "who-we-are",
     },
     {
       id: "OUR SERVICES",
@@ -52,8 +52,8 @@ const LgNav = () => {
           <h4
             style={{
               color: "rgb(2,0,36)",
-              background:
-                "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(48,202,197,0.22202384371717432) 7%, rgba(0,212,255,1) 100%)",
+              // background:
+              //   "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(48,202,197,0.22202384371717432) 7%, rgba(0,212,255,1) 100%)",
             }}
             className="text-3xl text-center font-bold text-gray-50"
           >
@@ -105,7 +105,7 @@ const SmNav = () => {
     },
     {
       id: "WHO WE ARE",
-      link: "why-us",
+      link: "who-we-are",
     },
     {
       id: "OUR SERVICES",

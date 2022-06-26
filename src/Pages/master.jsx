@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import AboutPage from "./about.page";
+import WhyUsPage from "./whyUs.page";
 import ConsulancyPage from "./consultancy.page";
 import ContactPage from "./contact.page";
 import GalleryPage from "./gallery.page";
 import HomePage from "./home.page";
-import InnovationPage from "./innovation.page";
 import ProjectsPage from "./projects.page";
+import WhoWeArePage from "./whoWeAre";
 
 const Master = () => {
   const { type } = useParams();
@@ -21,7 +21,8 @@ const Master = () => {
   return (
     <>
       {type === "home" && <HomePage />}
-      {type === "why-us" && <AboutPage />}
+      {type === "why-us" && <WhyUsPage />}
+      {type === "who-we-are" && <WhoWeArePage />}
       {type === "our-services" && <ConsulancyPage />}
       {type === "projects" && <ProjectsPage />}
       {(type === "gallery" ||
