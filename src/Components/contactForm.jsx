@@ -28,52 +28,71 @@ export const ContactForm = () => {
             </p>
           </div>
           <div className="w-full">
-            <form className="w-full flex flex-col items-start justify-center gap-2">
+            <form 
+              className="w-full flex flex-col items-start justify-center gap-2"
+              action="https://formsubmit.co/339b4772859520d530ba5b99eccd96a7"
+              method="POST"
+              enctype="multipart/mixed"
+              >
               <input
                 type="text"
                 placeholder="Your Name"
+                name="Name"
+                required
                 className="focus:outline-none focus:border-yellow-600 border-b pb-1.5 border-red-700 dark:border-gray-50 bg-transparent w-full placeholder:text-md placeholder:text-blue-color placeholder:dark:text-gray-50 plcaeholder:font-semibold text-md font-semibold text-blue-colr dark:text-gray-50"
               />
               <br />
               <input
                 type="text"
                 placeholder="Type of Project / Restaurent"
+                name="email"
+                required
                 className="focus:outline-none focus:border-yellow-600 border-b pb-1.5 border-red-700 dark:border-gray-50 bg-transparent w-full placeholder:text-md placeholder:text-blue-color placeholder:dark:text-gray-50 plcaeholder:font-semibold text-md font-semibold text-blue-colr dark:text-gray-50"
               />
               <br />
               <input
                 type="text"
                 placeholder="Location"
+                name="location"
+                required
                 className="focus:outline-none focus:border-yellow-600 border-b pb-1.5 border-red-700 dark:border-gray-50 bg-transparent w-full placeholder:text-md placeholder:text-blue-color placeholder:dark:text-gray-50 plcaeholder:font-semibold text-md font-semibold text-blue-colr dark:text-gray-50"
               />
               <br />
               <input
                 type="text"
                 placeholder="Capital Investment / Project Budget"
+                name="capital/budget"
+                required
                 className="focus:outline-none focus:border-yellow-600 border-b pb-1.5 border-red-700 dark:border-gray-50 bg-transparent w-full placeholder:text-md placeholder:text-blue-color placeholder:dark:text-gray-50 plcaeholder:font-semibold text-md font-semibold text-blue-colr dark:text-gray-50"
               />
               <br />
               <input
-                type="text"
+                type="email"
                 placeholder="Email Address"
+                name="email"
+                required
                 className="focus:outline-none focus:border-yellow-600 border-b pb-1.5 border-red-700 dark:border-gray-50 bg-transparent w-full placeholder:text-md placeholder:text-blue-color placeholder:dark:text-gray-50 plcaeholder:font-semibold text-md font-semibold text-blue-colr dark:text-gray-50"
               />
               <br />
               <input
                 type="text"
                 placeholder="Contact No"
+                name="number"
+                required
                 className="focus:outline-none focus:border-yellow-600 border-b pb-1.5 border-red-700 dark:border-gray-50 bg-transparent w-full placeholder:text-md placeholder:text-blue-color placeholder:dark:text-gray-50 plcaeholder:font-semibold text-md font-semibold text-blue-colr dark:text-gray-50"
               />
               <br />
               <input
                 type="text"
                 placeholder="Describe Your Concept / idea"
+                name="idea"
+                required
                 className="focus:outline-none focus:border-yellow-600 border-b pb-1.5 border-red-700 dark:border-gray-50 bg-transparent w-full placeholder:text-md placeholder:text-blue-color placeholder:dark:text-gray-50 plcaeholder:font-semibold text-md font-semibold text-blue-colr dark:text-gray-50"
               />
               <br />
-              <button className="px-8 py-2 text-xl font-bold bg-gray-800 text-gray-50 rounded-3xl shadow-lg">
-                SUBMIT
-              </button>
+              <div className="px-8 py-2 text-xl font-bold bg-gray-800 text-gray-50 rounded-3xl shadow-lg">
+                <input type="submit" />
+              </div>
             </form>
           </div>
         </div>
@@ -95,50 +114,66 @@ export const CForm = () => {
           </p>
         </div>
         <div className="w-full">
-          <form className="w-full flex flex-col items-start justify-center gap-2">
+          <form className="w-full flex flex-col items-start justify-center gap-2" action="https://formsubmit.co/339b4772859520d530ba5b99eccd96a7"
+              method="POST"
+              enctype="multipart/mixed">
             <input
               type="text"
               placeholder="Your Name"
+              name=""
+              required
               className="focus:outline-none focus:border-yellow-600 border-b pb-1.5 border-red-700 dark:border-gray-50 bg-transparent w-full placeholder:text-md placeholder:text-blue-color placeholder:dark:text-gray-50 plcaeholder:font-semibold text-md font-semibold text-blue-colr dark:text-gray-50"
             />
             <br />
             <input
               type="text"
               placeholder="Type of Project / Restaurent"
+              name=""
+              required
               className="focus:outline-none focus:border-yellow-600 border-b pb-1.5 border-red-700 dark:border-gray-50 bg-transparent w-full placeholder:text-md placeholder:text-blue-color placeholder:dark:text-gray-50 plcaeholder:font-semibold text-md font-semibold text-blue-colr dark:text-gray-50"
             />
             <br />
             <input
               type="text"
               placeholder="Location"
+              name=""
+              required
               className="focus:outline-none focus:border-yellow-600 border-b pb-1.5 border-red-700 dark:border-gray-50 bg-transparent w-full placeholder:text-md placeholder:text-blue-color placeholder:dark:text-gray-50 plcaeholder:font-semibold text-md font-semibold text-blue-colr dark:text-gray-50"
             />
             <br />
             <input
               type="text"
               placeholder="Capital Investment / Project Budget"
+              name=""
+              required
               className="focus:outline-none focus:border-yellow-600 border-b pb-1.5 border-red-700 dark:border-gray-50 bg-transparent w-full placeholder:text-md placeholder:text-blue-color placeholder:dark:text-gray-50 plcaeholder:font-semibold text-md font-semibold text-blue-colr dark:text-gray-50"
             />
             <br />
             <input
               type="text"
               placeholder="Email Address"
+              name=""
+              required
               className="focus:outline-none focus:border-yellow-600 border-b pb-1.5 border-red-700 dark:border-gray-50 bg-transparent w-full placeholder:text-md placeholder:text-blue-color placeholder:dark:text-gray-50 plcaeholder:font-semibold text-md font-semibold text-blue-colr dark:text-gray-50"
             />
             <br />
             <input
               type="text"
               placeholder="Contact No"
+              name=""
+              required
               className="focus:outline-none focus:border-yellow-600 border-b pb-1.5 border-red-700 dark:border-gray-50 bg-transparent w-full placeholder:text-md placeholder:text-blue-color placeholder:dark:text-gray-50 plcaeholder:font-semibold text-md font-semibold text-blue-colr dark:text-gray-50"
             />
             <br />
             <input
               type="text"
               placeholder="Describe Your Concept / idea"
+              name=""
+              required
               className="focus:outline-none focus:border-yellow-600 border-b pb-1.5 border-red-700 dark:border-gray-50 bg-transparent w-full placeholder:text-md placeholder:text-blue-color placeholder:dark:text-gray-50 plcaeholder:font-semibold text-md font-semibold text-blue-colr dark:text-gray-50"
             />
             <br />
-            <button className="px-8 py-2 text-xl font-bold bg-gray-800 text-gray-50 rounded-3xl shadow-lg">
+            <button type="submit" className="px-8 py-2 text-xl font-bold bg-gray-800 text-gray-50 rounded-3xl shadow-lg">
               SUBMIT
             </button>
           </form>
